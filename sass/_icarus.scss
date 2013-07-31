@@ -1,0 +1,278 @@
+// Icarus
+
+
+// brand
+.brand {
+	display: block;
+	padding-top: 8px;
+	padding-left: 18px;
+}
+
+.top-bar-section ul li > a.button {
+	margin-top: 18px;
+}
+
+// rombo 1
+
+.rombo {
+	width: 201px;
+	height: 256px;
+
+	display: inline-block;
+
+	background: url(../images/rombo1.png) 50% 50% no-repeat;
+}
+
+
+// hero
+$hero-text-color: #fff;
+
+.hero {
+	height: 581px;
+	width: 100%;
+	background: url(../images/hero-bg-1.jpg) 50% 0 no-repeat;
+	background-size: cover;
+	text-align: center;
+	position: relative;
+	margin-bottom: 102px;
+
+	h1,
+	h2,
+	p {
+		color: $hero-text-color;
+	}
+
+	h1 {
+		font-size: emCalc(37);
+		margin-top: 54px;
+		margin-bottom: 1.7em;
+	}
+
+	h2 {
+		font-weight: 400;
+		font-size: emCalc(24);
+	}
+
+	p {
+		font-weight: 300;
+		font-size: emCalc(14);
+	}
+
+	.rombo {
+		position: relative;
+		top: 0;
+		@include single-transition;
+		&:hover {
+			top: -10px;
+		}
+	}
+}
+
+
+.cta-container {
+	text-align: center;
+	.button {
+		bottom: -20px;
+		position: relative;
+	}
+}
+
+
+// Sections
+
+h2 {
+	font-weight: 300;
+	font-size: emCalc(37px);
+}
+h3 {
+	font-weight: 300;
+	font-size: emCalc(18px);
+	color: #777;
+	
+}	
+h4 {
+	font-weight: 300;
+	font-size: emCalc(18px);
+	width: 80%;
+
+	margin: 20px auto 50px;
+}
+
+
+.site-section {
+	border-top: 1px solid #ccc;
+	padding: 46px 0;
+
+	header {
+		h2,
+		h3,
+		h4 {
+			text-align: center;
+		}
+		h3 {
+			margin-top: 0;
+			margin-bottom: 50px;
+		}
+	}
+
+	h4 {
+		
+	}
+}
+
+// Process
+
+#process {
+	@extend .site-section;
+}
+
+$process-graph-height: 770px; 
+
+#process-area {
+	//height: $process-graph-height;
+	background: url(../images/process-bg.jpg) 0 0 repeat;
+	margin-bottom: 5em;
+}
+
+@mixin tresCols($ancho-columna: 455px, $gap: 22px) {
+
+	$maximus: ($ancho-columna * 3) + ($gap * 2);
+
+	width: $maximus;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+
+	> li {
+		list-style: none;
+
+		width: 455px;
+		margin: 0 11px;
+
+		float: left;
+		&:first-child{
+			margin-left: 0;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+
+		h5 {
+			margin: 0 40px;
+			font-size: emCalc(18);
+		}
+		p {
+			margin: 0 40px;
+			font-size: emCalc(12);
+		}
+	}
+
+	@media (max-width: $maximus) {
+		margin: 0 auto;
+		width: 90%;
+		//border: 1px solid red;
+
+		> li {
+			width: 31%;
+			margin: 0 1%;
+		}
+	}
+
+	@media (max-width: 767px) {
+		width: 100%;
+
+		> li {
+			width: 98%;
+			text-align: center;
+		}
+	}
+}
+
+#step-graph {
+	@include tresCols();
+	padding: 30px 0;
+
+}
+
+
+// About
+
+#about {
+	@extend .site-section;
+}
+
+.team-member {
+	text-align: center;
+
+	h3 {
+		font-weight: 700;
+		margin: 1em 0;
+		color: #111;
+
+	}
+	p {
+		font-size: emCalc(12);
+	}
+
+}
+
+.app-block {
+	margin-bottom: 15px;
+
+	img {
+		float: left;
+	}
+
+	.app-block-text {
+		margin-left: 110px;
+	}
+
+	h3 {
+		font-weight: 400;
+		font-size: emCalc(16);
+	}
+
+	p {
+		font-size: emCalc(12);	
+	}
+}
+
+
+#apps {
+	@extend .site-section;
+}
+
+#news {
+	@extend .site-section;
+}
+
+#contact {
+	@extend .site-section;
+}
+
+
+// Contact 
+
+.contact-panel {
+
+	min-height: 360px;
+
+	.thumbnail {
+		text-align: center;
+
+
+	}
+	h4 {
+		margin: 15px 0;
+		
+
+	}
+	p {
+		font-size: emCalc(12);
+	}
+
+
+
+
+}

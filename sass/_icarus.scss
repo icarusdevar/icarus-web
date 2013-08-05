@@ -1,15 +1,83 @@
 // Icarus
+ @import "compass/css3";
 
 
 // brand
 .brand {
 	display: block;
-	padding-top: 8px;
-	padding-left: 18px;
+	margin-top: 8px;
+	margin-left: 18px;
+	text-indent: -9999px;
+	width: 201px;
+	height: 62px;
+	background-image: url(../images/icarus-logo-bg.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	
+	img {
+		width: 201px;
+		max-width: 201px;
+	}
 }
 
-.top-bar-section ul li > a.button {
-	margin-top: 18px;
+@media only screen and (min-width: 768px) {
+	.brand {
+		float: none;
+	}
+	.top-bar-section ul li > a.button {
+		margin-top: 18px;
+	}
+}
+
+#site-header {
+
+	// .top-bar-section li a:not(.button),
+	// .top-bar-section .has-form,
+	// .top-bar-section ul li > a.button,
+
+	@media (min-width: 979px) {
+		.top-bar .name,
+		.top-bar {
+			@include single-transition(height 300ms);
+		}
+		.brand {
+			@include single-transition(background-position 300ms);
+		}
+		&.fixed {
+			.brand {
+				//width: 70px;
+				background-position: 0 -138px;
+				
+				overflow: hidden;
+				img {
+					width: 201px;
+					max-width: 201px;
+				}
+			}
+
+			.top-bar {
+				height: 40px;
+				line-height: 40px;
+			}
+
+			@media only screen and (min-width: 58.75em) {
+				.top-bar-section li a:not(.button),
+				.top-bar-section .has-form {
+					line-height: 40px;
+					height: 40px;
+				}
+			}
+
+			.top-bar-section ul li > a.button {
+				margin-top: 0px;
+			}
+
+			.top-bar .name {
+				height: 40px;
+			}
+		}	
+	}  // media querie
+	
 }
 
 // rombo 1
@@ -17,9 +85,7 @@
 .rombo {
 	width: 201px;
 	height: 256px;
-
 	display: inline-block;
-
 	background: url(../images/rombo1.png) 50% 50% no-repeat;
 }
 
@@ -30,7 +96,7 @@ $hero-text-color: #fff;
 .hero {
 	height: 581px;
 	width: 100%;
-	background: url(../images/hero-bg-1.jpg) 50% 0 no-repeat;
+	background: url(../images/hero-bg-1.jpg) 50% 0 no-repeat fixed;
 	background-size: cover;
 	text-align: center;
 	position: relative;
@@ -65,6 +131,12 @@ $hero-text-color: #fff;
 		&:hover {
 			top: -10px;
 		}
+	}
+
+	@media screen and (max-width: 768px) {
+		overflow: hidden;
+		height: auto;
+		margin-bottom: 0;
 	}
 }
 
@@ -124,6 +196,10 @@ h4 {
 
 #process {
 	@extend .site-section;
+}
+
+#process-graph {
+	overflow: hidden;
 }
 
 $process-graph-height: 770px; 
@@ -192,7 +268,10 @@ $process-graph-height: 770px;
 #step-graph {
 	@include tresCols();
 	padding: 30px 0;
-
+	@include single-transition(all 600ms);
+	&.right-aligned {
+		@include translateX(100em);
+	}
 }
 
 
@@ -217,15 +296,22 @@ $process-graph-height: 770px;
 
 }
 
+.panel-app {
+	@include panel($secondary-color, 0);
+	//display: none;
+	@include opacity(0);
+}
+
 .app-block {
 	margin-bottom: 15px;
 
-	img {
-		float: left;
-	}
+	img { width: 100%; }
 
 	.app-block-text {
-		margin-left: 110px;
+		padding: emCalc(20);
+		img {
+			width: auto;
+		}
 	}
 
 	h3 {
@@ -236,6 +322,13 @@ $process-graph-height: 770px;
 	p {
 		font-size: emCalc(12);	
 	}
+}
+
+.app-icon {
+	position: absolute;
+	top: 90px;
+	margin-left: -48px;
+	left: 50%;
 }
 
 

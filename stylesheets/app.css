@@ -7218,19 +7218,85 @@ a.th {
   max-width: 800px;
 }
 
-/* line 5, ../sass/_icarus.scss */
+/* line 6, ../sass/_icarus.scss */
 .brand {
   display: block;
-  padding-top: 8px;
-  padding-left: 18px;
+  margin-top: 8px;
+  margin-left: 18px;
+  text-indent: -9999px;
+  width: 201px;
+  height: 62px;
+  background-image: url(../images/icarus-logo-bg.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
-
-/* line 11, ../sass/_icarus.scss */
-.top-bar-section ul li > a.button {
-  margin-top: 18px;
-}
-
 /* line 17, ../sass/_icarus.scss */
+.brand img {
+  width: 201px;
+  max-width: 201px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 24, ../sass/_icarus.scss */
+  .brand {
+    float: none;
+  }
+
+  /* line 27, ../sass/_icarus.scss */
+  .top-bar-section ul li > a.button {
+    margin-top: 18px;
+  }
+}
+@media (min-width: 979px) {
+  /* line 40, ../sass/_icarus.scss */
+  #site-header .top-bar .name,
+  #site-header .top-bar {
+    -webkit-transition: height 300ms, 1s;
+    -moz-transition: height 300ms, 1s;
+    -o-transition: height 300ms, 1s;
+    transition: height 300ms, 1s;
+  }
+  /* line 43, ../sass/_icarus.scss */
+  #site-header .brand {
+    -webkit-transition: background-position 300ms, 1s;
+    -moz-transition: background-position 300ms, 1s;
+    -o-transition: background-position 300ms, 1s;
+    transition: background-position 300ms, 1s;
+  }
+  /* line 47, ../sass/_icarus.scss */
+  #site-header.fixed .brand {
+    background-position: 0 -138px;
+    overflow: hidden;
+  }
+  /* line 52, ../sass/_icarus.scss */
+  #site-header.fixed .brand img {
+    width: 201px;
+    max-width: 201px;
+  }
+  /* line 58, ../sass/_icarus.scss */
+  #site-header.fixed .top-bar {
+    height: 40px;
+    line-height: 40px;
+  }
+  /* line 71, ../sass/_icarus.scss */
+  #site-header.fixed .top-bar-section ul li > a.button {
+    margin-top: 0px;
+  }
+  /* line 75, ../sass/_icarus.scss */
+  #site-header.fixed .top-bar .name {
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 979px) and (min-width: 58.75em) {
+  /* line 65, ../sass/_icarus.scss */
+  #site-header.fixed .top-bar-section li a:not(.button),
+  #site-header.fixed .top-bar-section .has-form {
+    line-height: 40px;
+    height: 40px;
+  }
+}
+
+/* line 85, ../sass/_icarus.scss */
 .rombo {
   width: 201px;
   height: 256px;
@@ -7238,75 +7304,84 @@ a.th {
   background: url(../images/rombo1.png) 50% 50% no-repeat;
 }
 
-/* line 30, ../sass/_icarus.scss */
+/* line 96, ../sass/_icarus.scss */
 .hero {
   height: 581px;
   width: 100%;
-  background: url(../images/hero-bg-1.jpg) 50% 0 no-repeat;
+  background: url(../images/hero-bg-1.jpg) 50% 0 no-repeat fixed;
   background-size: cover;
   text-align: center;
   position: relative;
   margin-bottom: 102px;
 }
-/* line 41, ../sass/_icarus.scss */
+/* line 107, ../sass/_icarus.scss */
 .hero h1,
 .hero h2,
 .hero p {
   color: white;
 }
-/* line 45, ../sass/_icarus.scss */
+/* line 111, ../sass/_icarus.scss */
 .hero h1 {
   font-size: 2.3125em;
   margin-top: 54px;
   margin-bottom: 1.7em;
 }
-/* line 51, ../sass/_icarus.scss */
+/* line 117, ../sass/_icarus.scss */
 .hero h2 {
   font-weight: 400;
   font-size: 1.5em;
 }
-/* line 56, ../sass/_icarus.scss */
+/* line 122, ../sass/_icarus.scss */
 .hero p {
   font-weight: 300;
   font-size: 0.875em;
 }
-/* line 61, ../sass/_icarus.scss */
+/* line 127, ../sass/_icarus.scss */
 .hero .rombo {
   position: relative;
   top: 0;
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
-/* line 65, ../sass/_icarus.scss */
+/* line 131, ../sass/_icarus.scss */
 .hero .rombo:hover {
   top: -10px;
 }
+@media screen and (max-width: 768px) {
+  /* line 96, ../sass/_icarus.scss */
+  .hero {
+    overflow: hidden;
+    height: auto;
+    margin-bottom: 0;
+  }
+}
 
-/* line 72, ../sass/_icarus.scss */
+/* line 144, ../sass/_icarus.scss */
 .cta-container {
   text-align: center;
 }
-/* line 74, ../sass/_icarus.scss */
+/* line 146, ../sass/_icarus.scss */
 .cta-container .button {
   bottom: -20px;
   position: relative;
 }
 
-/* line 83, ../sass/_icarus.scss */
+/* line 155, ../sass/_icarus.scss */
 h2 {
   font-weight: 300;
   font-size: 2.3125em;
 }
 
-/* line 87, ../sass/_icarus.scss */
+/* line 159, ../sass/_icarus.scss */
 h3 {
   font-weight: 300;
   font-size: 1.125em;
   color: #777;
 }
 
-/* line 93, ../sass/_icarus.scss */
+/* line 165, ../sass/_icarus.scss */
 h4 {
   font-weight: 300;
   font-size: 1.125em;
@@ -7314,12 +7389,12 @@ h4 {
   margin: 20px auto 50px;
 }
 
-/* line 102, ../sass/_icarus.scss */
+/* line 174, ../sass/_icarus.scss */
 .site-section, #process, #about, #apps, #news, #contact {
   border-top: 1px solid #ccc;
   padding: 46px 0;
 }
-/* line 109, ../sass/_icarus.scss */
+/* line 181, ../sass/_icarus.scss */
 .site-section header h2, #process header h2, #about header h2, #apps header h2, #news header h2, #contact header h2,
 .site-section header h3,
 #process header h3,
@@ -7335,19 +7410,24 @@ h4 {
 #contact header h4 {
   text-align: center;
 }
-/* line 112, ../sass/_icarus.scss */
+/* line 184, ../sass/_icarus.scss */
 .site-section header h3, #process header h3, #about header h3, #apps header h3, #news header h3, #contact header h3 {
   margin-top: 0;
   margin-bottom: 50px;
 }
 
-/* line 131, ../sass/_icarus.scss */
+/* line 201, ../sass/_icarus.scss */
+#process-graph {
+  overflow: hidden;
+}
+
+/* line 207, ../sass/_icarus.scss */
 #process-area {
   background: url(../images/process-bg.jpg) 0 0 repeat;
   margin-bottom: 5em;
 }
 
-/* line 192, ../sass/_icarus.scss */
+/* line 268, ../sass/_icarus.scss */
 #step-graph {
   width: 1409px;
   margin: 0 auto;
@@ -7355,106 +7435,163 @@ h4 {
   list-style: none;
   overflow: hidden;
   padding: 30px 0;
+  -webkit-transition: all 600ms, 1s;
+  -moz-transition: all 600ms, 1s;
+  -o-transition: all 600ms, 1s;
+  transition: all 600ms, 1s;
 }
-/* line 147, ../sass/_icarus.scss */
+/* line 223, ../sass/_icarus.scss */
 #step-graph > li {
   list-style: none;
   width: 455px;
   margin: 0 11px;
   float: left;
 }
-/* line 154, ../sass/_icarus.scss */
+/* line 230, ../sass/_icarus.scss */
 #step-graph > li:first-child {
   margin-left: 0;
 }
-/* line 157, ../sass/_icarus.scss */
+/* line 233, ../sass/_icarus.scss */
 #step-graph > li:last-child {
   margin-right: 0;
 }
-/* line 161, ../sass/_icarus.scss */
+/* line 237, ../sass/_icarus.scss */
 #step-graph > li h5 {
   margin: 0 40px;
   font-size: 1.125em;
 }
-/* line 165, ../sass/_icarus.scss */
+/* line 241, ../sass/_icarus.scss */
 #step-graph > li p {
   margin: 0 40px;
   font-size: 0.75em;
 }
 @media (max-width: 1409px) {
-  /* line 192, ../sass/_icarus.scss */
+  /* line 268, ../sass/_icarus.scss */
   #step-graph {
     margin: 0 auto;
     width: 90%;
   }
-  /* line 176, ../sass/_icarus.scss */
+  /* line 252, ../sass/_icarus.scss */
   #step-graph > li {
     width: 31%;
     margin: 0 1%;
   }
 }
 @media (max-width: 767px) {
-  /* line 192, ../sass/_icarus.scss */
+  /* line 268, ../sass/_icarus.scss */
   #step-graph {
     width: 100%;
   }
-  /* line 185, ../sass/_icarus.scss */
+  /* line 261, ../sass/_icarus.scss */
   #step-graph > li {
     width: 98%;
     text-align: center;
   }
 }
+/* line 272, ../sass/_icarus.scss */
+#step-graph.right-aligned {
+  -webkit-transform: translateX(100em);
+  -moz-transform: translateX(100em);
+  -ms-transform: translateX(100em);
+  -o-transform: translateX(100em);
+  transform: translateX(100em);
+}
 
-/* line 205, ../sass/_icarus.scss */
+/* line 284, ../sass/_icarus.scss */
 .team-member {
   text-align: center;
 }
-/* line 208, ../sass/_icarus.scss */
+/* line 287, ../sass/_icarus.scss */
 .team-member h3 {
   font-weight: 700;
   margin: 1em 0;
   color: #111;
 }
-/* line 214, ../sass/_icarus.scss */
+/* line 293, ../sass/_icarus.scss */
 .team-member p {
   font-size: 0.75em;
 }
 
-/* line 220, ../sass/_icarus.scss */
+/* line 299, ../sass/_icarus.scss */
+.panel-app {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d0d0d0;
+  margin-bottom: 1.25em;
+  padding: 0;
+  background: #e9e9e9;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 44, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.1/scss/foundation/components/_panels.scss */
+.panel-app > :first-child {
+  margin-top: 0;
+}
+/* line 45, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.1/scss/foundation/components/_panels.scss */
+.panel-app > :last-child {
+  margin-bottom: 0;
+}
+/* line 50, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.1/scss/foundation/components/_panels.scss */
+.panel-app h1, .panel-app h2, .panel-app h3, .panel-app h4, .panel-app h5, .panel-app h6, .panel-app p {
+  color: #333333;
+}
+/* line 54, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.1/scss/foundation/components/_panels.scss */
+.panel-app h1, .panel-app h2, .panel-app h3, .panel-app h4, .panel-app h5, .panel-app h6 {
+  line-height: 1;
+  margin-bottom: 0.625em;
+}
+/* line 56, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.1/scss/foundation/components/_panels.scss */
+.panel-app h1.subheader, .panel-app h2.subheader, .panel-app h3.subheader, .panel-app h4.subheader, .panel-app h5.subheader, .panel-app h6.subheader {
+  line-height: 1.4;
+}
+
+/* line 305, ../sass/_icarus.scss */
 .app-block {
   margin-bottom: 15px;
 }
-/* line 223, ../sass/_icarus.scss */
+/* line 308, ../sass/_icarus.scss */
 .app-block img {
-  float: left;
+  width: 100%;
 }
-/* line 227, ../sass/_icarus.scss */
+/* line 310, ../sass/_icarus.scss */
 .app-block .app-block-text {
-  margin-left: 110px;
+  padding: 1.25em;
 }
-/* line 231, ../sass/_icarus.scss */
+/* line 312, ../sass/_icarus.scss */
+.app-block .app-block-text img {
+  width: auto;
+}
+/* line 317, ../sass/_icarus.scss */
 .app-block h3 {
   font-weight: 400;
   font-size: 1em;
 }
-/* line 236, ../sass/_icarus.scss */
+/* line 322, ../sass/_icarus.scss */
 .app-block p {
   font-size: 0.75em;
 }
 
-/* line 257, ../sass/_icarus.scss */
+/* line 327, ../sass/_icarus.scss */
+.app-icon {
+  position: absolute;
+  top: 90px;
+  margin-left: -48px;
+  left: 50%;
+}
+
+/* line 350, ../sass/_icarus.scss */
 .contact-panel {
   min-height: 360px;
 }
-/* line 261, ../sass/_icarus.scss */
+/* line 354, ../sass/_icarus.scss */
 .contact-panel .thumbnail {
   text-align: center;
 }
-/* line 266, ../sass/_icarus.scss */
+/* line 359, ../sass/_icarus.scss */
 .contact-panel h4 {
   margin: 15px 0;
 }
-/* line 271, ../sass/_icarus.scss */
+/* line 364, ../sass/_icarus.scss */
 .contact-panel p {
   font-size: 0.75em;
 }

@@ -30,7 +30,7 @@
 			<ul class="title-area">
 				<!-- Title Area -->
 				<li class="name">
-					<a href="#" class="brand"><img src="images/icarus-logo.png" alt="Icarus"></a>
+					<a href="#home" class="brand"><img src="images/icarus-logo.png" alt="Icarus"></a>
 				</li>
 				<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -39,18 +39,18 @@
 			<section class="top-bar-section">
 				<!-- Right Nav Section -->
 				<ul class="right">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Process</a></li>
-					<li><a href="#">Apps</a></li>
-					<li><a href="#">News</a></li>
-					<li class="has-form"><a class="small button radius" href="#">Button!</a></li>
+					<li><a href="#process">Process</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#apps">Apps</a></li>
+					<li><a href="#news">News</a></li>
+					<li class="has-form"><a class="small button radius" href="#contact">Contact Us</a></li>
 				</ul>
 			</section>
 
 		</nav>
 	</header>
 
-	<section class="hero">
+	<section class="hero" id="home">
 		<div class="row">
 			<div class="large-12 columns">
 				
@@ -282,20 +282,31 @@
 				<h2>News</h2>
 			</header>
 
-			<div class="row">
+			<div class="row hide-for-medium-up" id="social-links">
+				<div class="small-6 columns">
+					<a href="http://www.facebook.com/" class="social-facebook"><i class="icon-facebook-squared"></i></a>
+				</div>
+				<div class="small-6 columns">
+					<a href="http://www.twitter.com/" class="social-twitter"><i class="icon-twitter"></i></a>
+				</div>
+			</div>
+
+			<div class="row hide-for-small">
+				
 				<div class="large-6 columns">
-					
-					<div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-width="460" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
+
+					<div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-width="470" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
 
 				</div>
 
 				<div class="large-6 columns">
-					
+
 					<a class="twitter-timeline" href="https://twitter.com/god" data-widget-id="362428129979019264">Tweets por @god</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 				</div>
-			</div>
+			</div> <!-- .row -->
+
 		</div>
 	</div> <!-- #news -->
 
@@ -348,6 +359,17 @@
 		</div>
 	</div>
 
+	<footer id="site-footer">
+		<div class="row">
+			<div class="large-6 columns">
+				<img src="images/icarus2.png" alt="IcarusDev Ios apps">
+			</div>
+			<div class="large-6 columns">
+				<p class="text-right">icarusdev 2013 | <span class="author">Design &amp; Development <a href="https://twitter.com/jeriko82" title="Send me a message">jeronimonunez</a></span></p>
+			</div>
+		</div>
+	</footer>
+
 
 	<script src="javascripts/vendor/jquery.js"></script>
 
@@ -386,7 +408,6 @@
 	<script src="javascripts/vendor/waypoints.js"></script>
 
 	<script src="javascripts/app.js"></script>
-	
 
 </body>
 </html>

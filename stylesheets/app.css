@@ -1,3 +1,4 @@
+@charset "CP850";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,800);
 /*! normalize.css v2.1.1 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -4643,7 +4644,7 @@ label.error {
   height: 34px;
   line-height: 33px;
   padding: 0;
-  color: white;
+  color: #666666;
 }
 /* line 164, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.1/scss/foundation/components/_top-bar.scss */
 .top-bar .toggle-topbar.menu-icon a span {
@@ -4652,8 +4653,8 @@ label.error {
   display: block;
   width: 16px;
   height: 0;
-  -webkit-box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
-  box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
+  -webkit-box-shadow: 0 10px 0 1px #666666, 0 16px 0 1px #666666, 0 22px 0 1px #666666;
+  box-shadow: 0 10px 0 1px #666666, 0 16px 0 1px #666666, 0 22px 0 1px #666666;
 }
 /* line 185, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.1/scss/foundation/components/_top-bar.scss */
 .top-bar.expanded {
@@ -4688,7 +4689,7 @@ label.error {
   width: 100%;
   height: auto;
   display: block;
-  background: #222222;
+  background: #cfd9db;
   font-size: 16;
   margin: 0;
 }
@@ -4710,7 +4711,7 @@ label.error {
   padding-left: 27.33333px;
   font-size: 0.8125em;
   font-weight: bold;
-  background: #222222;
+  background: #cfd9db;
 }
 /* line 246, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.1/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button {
@@ -4918,7 +4919,7 @@ label.error {
   }
   /* line 411, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.1/scss/foundation/components/_top-bar.scss */
   .top-bar-section li a:not(.button).hover {
-    background: black;
+    background: #77939a;
   }
   /* line 416, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.1/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-dropdown > a {
@@ -7218,6 +7219,62 @@ a.th {
   max-width: 800px;
 }
 
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?38239995");
+  src: url("../font/fontello.eot?38239995#iefix") format("embedded-opentype"), url("../font/fontello.woff?38239995") format("woff"), url("../font/fontello.ttf?38239995") format("truetype"), url("../font/fontello.svg?38239995#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?38239995#fontello') format('svg');
+  }
+}
+*/
+/* line 22, ../sass/_fontello.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 53, ../sass/_fontello.scss */
+.icon-twitter:before {
+  content: '\e800';
+}
+
+/* '' */
+/* line 54, ../sass/_fontello.scss */
+.icon-facebook-squared:before {
+  content: '\e801';
+}
+
+/* '' */
 /* line 6, ../sass/_icarus.scss */
 .brand {
   display: block;
@@ -7236,19 +7293,24 @@ a.th {
   max-width: 201px;
 }
 
+/* line 23, ../sass/_icarus.scss */
+.top-bar-section ul li > a.button {
+  color: #fff;
+}
+
 @media only screen and (min-width: 768px) {
-  /* line 24, ../sass/_icarus.scss */
+  /* line 28, ../sass/_icarus.scss */
   .brand {
     float: none;
   }
 
-  /* line 27, ../sass/_icarus.scss */
+  /* line 31, ../sass/_icarus.scss */
   .top-bar-section ul li > a.button {
     margin-top: 18px;
   }
 }
 @media (min-width: 979px) {
-  /* line 40, ../sass/_icarus.scss */
+  /* line 44, ../sass/_icarus.scss */
   #site-header .top-bar .name,
   #site-header .top-bar {
     -webkit-transition: height 300ms, 1s;
@@ -7256,39 +7318,39 @@ a.th {
     -o-transition: height 300ms, 1s;
     transition: height 300ms, 1s;
   }
-  /* line 43, ../sass/_icarus.scss */
+  /* line 47, ../sass/_icarus.scss */
   #site-header .brand {
     -webkit-transition: background-position 300ms, 1s;
     -moz-transition: background-position 300ms, 1s;
     -o-transition: background-position 300ms, 1s;
     transition: background-position 300ms, 1s;
   }
-  /* line 47, ../sass/_icarus.scss */
+  /* line 51, ../sass/_icarus.scss */
   #site-header.fixed .brand {
     background-position: 0 -138px;
     overflow: hidden;
   }
-  /* line 52, ../sass/_icarus.scss */
+  /* line 56, ../sass/_icarus.scss */
   #site-header.fixed .brand img {
     width: 201px;
     max-width: 201px;
   }
-  /* line 58, ../sass/_icarus.scss */
+  /* line 62, ../sass/_icarus.scss */
   #site-header.fixed .top-bar {
     height: 40px;
     line-height: 40px;
   }
-  /* line 71, ../sass/_icarus.scss */
+  /* line 75, ../sass/_icarus.scss */
   #site-header.fixed .top-bar-section ul li > a.button {
     margin-top: 0px;
   }
-  /* line 75, ../sass/_icarus.scss */
+  /* line 79, ../sass/_icarus.scss */
   #site-header.fixed .top-bar .name {
     height: 40px;
   }
 }
 @media only screen and (min-width: 979px) and (min-width: 58.75em) {
-  /* line 65, ../sass/_icarus.scss */
+  /* line 69, ../sass/_icarus.scss */
   #site-header.fixed .top-bar-section li a:not(.button),
   #site-header.fixed .top-bar-section .has-form {
     line-height: 40px;
@@ -7296,7 +7358,7 @@ a.th {
   }
 }
 
-/* line 85, ../sass/_icarus.scss */
+/* line 89, ../sass/_icarus.scss */
 .rombo {
   width: 201px;
   height: 256px;
@@ -7304,7 +7366,7 @@ a.th {
   background: url(../images/rombo1.png) 50% 50% no-repeat;
 }
 
-/* line 96, ../sass/_icarus.scss */
+/* line 100, ../sass/_icarus.scss */
 .hero {
   height: 581px;
   width: 100%;
@@ -7314,29 +7376,29 @@ a.th {
   position: relative;
   margin-bottom: 102px;
 }
-/* line 107, ../sass/_icarus.scss */
+/* line 111, ../sass/_icarus.scss */
 .hero h1,
 .hero h2,
 .hero p {
   color: white;
 }
-/* line 111, ../sass/_icarus.scss */
+/* line 115, ../sass/_icarus.scss */
 .hero h1 {
   font-size: 2.3125em;
   margin-top: 54px;
   margin-bottom: 1.7em;
 }
-/* line 117, ../sass/_icarus.scss */
+/* line 121, ../sass/_icarus.scss */
 .hero h2 {
   font-weight: 400;
   font-size: 1.5em;
 }
-/* line 122, ../sass/_icarus.scss */
+/* line 126, ../sass/_icarus.scss */
 .hero p {
   font-weight: 300;
   font-size: 0.875em;
 }
-/* line 127, ../sass/_icarus.scss */
+/* line 131, ../sass/_icarus.scss */
 .hero .rombo {
   position: relative;
   top: 0;
@@ -7345,12 +7407,12 @@ a.th {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 131, ../sass/_icarus.scss */
+/* line 135, ../sass/_icarus.scss */
 .hero .rombo:hover {
   top: -10px;
 }
 @media screen and (max-width: 768px) {
-  /* line 96, ../sass/_icarus.scss */
+  /* line 100, ../sass/_icarus.scss */
   .hero {
     overflow: hidden;
     height: auto;
@@ -7358,30 +7420,30 @@ a.th {
   }
 }
 
-/* line 144, ../sass/_icarus.scss */
+/* line 148, ../sass/_icarus.scss */
 .cta-container {
   text-align: center;
 }
-/* line 146, ../sass/_icarus.scss */
+/* line 150, ../sass/_icarus.scss */
 .cta-container .button {
   bottom: -20px;
   position: relative;
 }
 
-/* line 155, ../sass/_icarus.scss */
+/* line 159, ../sass/_icarus.scss */
 h2 {
   font-weight: 300;
   font-size: 2.3125em;
 }
 
-/* line 159, ../sass/_icarus.scss */
+/* line 163, ../sass/_icarus.scss */
 h3 {
   font-weight: 300;
   font-size: 1.125em;
   color: #777;
 }
 
-/* line 165, ../sass/_icarus.scss */
+/* line 169, ../sass/_icarus.scss */
 h4 {
   font-weight: 300;
   font-size: 1.125em;
@@ -7389,45 +7451,47 @@ h4 {
   margin: 20px auto 50px;
 }
 
-/* line 174, ../sass/_icarus.scss */
-.site-section, #process, #about, #apps, #news, #contact {
+/* line 178, ../sass/_icarus.scss */
+.site-section, #process, #about, #apps, #news, #contact, #site-footer {
   border-top: 1px solid #ccc;
   padding: 46px 0;
 }
-/* line 181, ../sass/_icarus.scss */
-.site-section header h2, #process header h2, #about header h2, #apps header h2, #news header h2, #contact header h2,
+/* line 185, ../sass/_icarus.scss */
+.site-section header h2, #process header h2, #about header h2, #apps header h2, #news header h2, #contact header h2, #site-footer header h2,
 .site-section header h3,
 #process header h3,
 #about header h3,
 #apps header h3,
 #news header h3,
 #contact header h3,
+#site-footer header h3,
 .site-section header h4,
 #process header h4,
 #about header h4,
 #apps header h4,
 #news header h4,
-#contact header h4 {
+#contact header h4,
+#site-footer header h4 {
   text-align: center;
 }
-/* line 184, ../sass/_icarus.scss */
-.site-section header h3, #process header h3, #about header h3, #apps header h3, #news header h3, #contact header h3 {
+/* line 188, ../sass/_icarus.scss */
+.site-section header h3, #process header h3, #about header h3, #apps header h3, #news header h3, #contact header h3, #site-footer header h3 {
   margin-top: 0;
   margin-bottom: 50px;
 }
 
-/* line 201, ../sass/_icarus.scss */
+/* line 205, ../sass/_icarus.scss */
 #process-graph {
   overflow: hidden;
 }
 
-/* line 207, ../sass/_icarus.scss */
+/* line 211, ../sass/_icarus.scss */
 #process-area {
   background: url(../images/process-bg.jpg) 0 0 repeat;
   margin-bottom: 5em;
 }
 
-/* line 268, ../sass/_icarus.scss */
+/* line 272, ../sass/_icarus.scss */
 #step-graph {
   width: 1409px;
   margin: 0 auto;
@@ -7440,55 +7504,55 @@ h4 {
   -o-transition: all 600ms, 1s;
   transition: all 600ms, 1s;
 }
-/* line 223, ../sass/_icarus.scss */
+/* line 227, ../sass/_icarus.scss */
 #step-graph > li {
   list-style: none;
   width: 455px;
   margin: 0 11px;
   float: left;
 }
-/* line 230, ../sass/_icarus.scss */
+/* line 234, ../sass/_icarus.scss */
 #step-graph > li:first-child {
   margin-left: 0;
 }
-/* line 233, ../sass/_icarus.scss */
+/* line 237, ../sass/_icarus.scss */
 #step-graph > li:last-child {
   margin-right: 0;
 }
-/* line 237, ../sass/_icarus.scss */
+/* line 241, ../sass/_icarus.scss */
 #step-graph > li h5 {
   margin: 0 40px;
   font-size: 1.125em;
 }
-/* line 241, ../sass/_icarus.scss */
+/* line 245, ../sass/_icarus.scss */
 #step-graph > li p {
   margin: 0 40px;
   font-size: 0.75em;
 }
 @media (max-width: 1409px) {
-  /* line 268, ../sass/_icarus.scss */
+  /* line 272, ../sass/_icarus.scss */
   #step-graph {
     margin: 0 auto;
     width: 90%;
   }
-  /* line 252, ../sass/_icarus.scss */
+  /* line 256, ../sass/_icarus.scss */
   #step-graph > li {
     width: 31%;
     margin: 0 1%;
   }
 }
 @media (max-width: 767px) {
-  /* line 268, ../sass/_icarus.scss */
+  /* line 272, ../sass/_icarus.scss */
   #step-graph {
     width: 100%;
   }
-  /* line 261, ../sass/_icarus.scss */
+  /* line 265, ../sass/_icarus.scss */
   #step-graph > li {
     width: 98%;
     text-align: center;
   }
 }
-/* line 272, ../sass/_icarus.scss */
+/* line 276, ../sass/_icarus.scss */
 #step-graph.right-aligned {
   -webkit-transform: translateX(100em);
   -moz-transform: translateX(100em);
@@ -7497,22 +7561,22 @@ h4 {
   transform: translateX(100em);
 }
 
-/* line 284, ../sass/_icarus.scss */
+/* line 288, ../sass/_icarus.scss */
 .team-member {
   text-align: center;
 }
-/* line 287, ../sass/_icarus.scss */
+/* line 291, ../sass/_icarus.scss */
 .team-member h3 {
   font-weight: 700;
   margin: 1em 0;
   color: #111;
 }
-/* line 293, ../sass/_icarus.scss */
+/* line 297, ../sass/_icarus.scss */
 .team-member p {
   font-size: 0.75em;
 }
 
-/* line 299, ../sass/_icarus.scss */
+/* line 303, ../sass/_icarus.scss */
 .panel-app {
   border-style: solid;
   border-width: 1px;
@@ -7545,33 +7609,33 @@ h4 {
   line-height: 1.4;
 }
 
-/* line 305, ../sass/_icarus.scss */
+/* line 309, ../sass/_icarus.scss */
 .app-block {
   margin-bottom: 15px;
 }
-/* line 308, ../sass/_icarus.scss */
+/* line 312, ../sass/_icarus.scss */
 .app-block img {
   width: 100%;
 }
-/* line 310, ../sass/_icarus.scss */
+/* line 314, ../sass/_icarus.scss */
 .app-block .app-block-text {
   padding: 1.25em;
 }
-/* line 312, ../sass/_icarus.scss */
+/* line 316, ../sass/_icarus.scss */
 .app-block .app-block-text img {
   width: auto;
 }
-/* line 317, ../sass/_icarus.scss */
+/* line 321, ../sass/_icarus.scss */
 .app-block h3 {
   font-weight: 400;
   font-size: 1em;
 }
-/* line 322, ../sass/_icarus.scss */
+/* line 326, ../sass/_icarus.scss */
 .app-block p {
   font-size: 0.75em;
 }
 
-/* line 327, ../sass/_icarus.scss */
+/* line 331, ../sass/_icarus.scss */
 .app-icon {
   position: absolute;
   top: 90px;
@@ -7579,19 +7643,45 @@ h4 {
   left: 50%;
 }
 
-/* line 350, ../sass/_icarus.scss */
+/* line 351, ../sass/_icarus.scss */
+#site-footer {
+  background: #eaeaea;
+}
+/* line 354, ../sass/_icarus.scss */
+#site-footer p {
+  font-size: 0.75em;
+}
+
+/* line 362, ../sass/_icarus.scss */
 .contact-panel {
   min-height: 360px;
 }
-/* line 354, ../sass/_icarus.scss */
+/* line 366, ../sass/_icarus.scss */
 .contact-panel .thumbnail {
   text-align: center;
 }
-/* line 359, ../sass/_icarus.scss */
+/* line 371, ../sass/_icarus.scss */
 .contact-panel h4 {
   margin: 15px 0;
 }
-/* line 364, ../sass/_icarus.scss */
+/* line 376, ../sass/_icarus.scss */
 .contact-panel p {
   font-size: 0.75em;
+}
+
+/* line 386, ../sass/_icarus.scss */
+#social-links i {
+  font-size: 5em;
+}
+/* line 389, ../sass/_icarus.scss */
+#social-links .small-6 {
+  text-align: center;
+}
+/* line 392, ../sass/_icarus.scss */
+#social-links a.social-facebook {
+  color: #3B5998;
+}
+/* line 395, ../sass/_icarus.scss */
+#social-links a.social-twitter {
+  color: #34BBEE;
 }

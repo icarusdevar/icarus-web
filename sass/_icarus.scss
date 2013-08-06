@@ -20,6 +20,10 @@
 	}
 }
 
+.top-bar-section ul li > a.button {
+	color: #fff;
+}
+
 @media only screen and (min-width: 768px) {
 	.brand {
 		float: none;
@@ -344,6 +348,14 @@ $process-graph-height: 770px;
 	@extend .site-section;
 }
 
+#site-footer {
+	@extend .site-section;
+	background: #eaeaea;
+	p {
+		font-size: emCalc(12);
+	}
+}
+
 
 // Contact 
 
@@ -368,4 +380,19 @@ $process-graph-height: 770px;
 
 
 
+}
+
+#social-links {
+	i {
+		font-size: 5em;
+	}
+	.small-6 {
+		text-align: center;
+	}
+	a.social-facebook {
+		color: #3B5998;
+	}
+	a.social-twitter {
+		color: #34BBEE;
+	}
 }

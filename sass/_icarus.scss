@@ -8,7 +8,7 @@
 	margin-top: 8px;
 	margin-left: 18px;
 	text-indent: -9999px;
-	width: 201px;
+	width: 241px;
 	height: 62px;
 	background-image: url(../images/icarus-logo-bg.png);
 	background-repeat: no-repeat;
@@ -303,11 +303,12 @@ $process-graph-height: 770px;
 .panel-app {
 	@include panel($secondary-color, 0);
 	//display: none;
-	@include opacity(0);
+	//@include opacity(0);
+	margin-bottom: 0;
 }
 
 .app-block {
-	margin-bottom: 15px;
+	//margin-bottom: 15px;
 
 	img { width: 100%; }
 
@@ -330,7 +331,7 @@ $process-graph-height: 770px;
 
 .app-icon {
 	position: absolute;
-	top: 90px;
+	top: 100px;
 	margin-left: -48px;
 	left: 50%;
 }
@@ -360,26 +361,17 @@ $process-graph-height: 770px;
 // Contact 
 
 .contact-panel {
-
 	min-height: 360px;
 
 	.thumbnail {
 		text-align: center;
-
-
 	}
 	h4 {
 		margin: 15px 0;
-		
-
 	}
 	p {
 		font-size: emCalc(12);
 	}
-
-
-
-
 }
 
 #social-links {
@@ -395,4 +387,118 @@ $process-graph-height: 770px;
 	a.social-twitter {
 		color: #34BBEE;
 	}
+}
+
+// slider
+.slider-container {
+	height: 600px;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.article {
+	-webkit-perspective: 600px;
+	-moz-perspective: 600px;
+	-ms-perspective: 600px;
+	-o-perspective: 600px;
+	perspective: 600px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.slide {
+	@extend .app-block;
+
+	.button {
+		margin-bottom: 0;
+	}
+
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+
+	border-radius: 0px;
+	
+	width: 320px;
+	height: 428px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -(320px/2);
+	margin-top: -220px;
+	opacity: 0;
+	@include single-transition();
+	&.bespoke-active {
+		opacity: 1;
+		z-index: 1;
+	}
+}
+
+
+$next-s: 340px;
+$nextnext-s: 360px;
+$nextnextnext-s: 720px;
+
+.apps {
+	/* Classic Theme plus  */
+	//@extend .classic;
+
+	.arrow:hover {
+		background: rgb(243, 111, 86);
+	}
+	a {
+		color: rgb(243, 111, 86);
+	}
+
+	section {
+		&.bespoke-before {
+			@include transform( translate3d( -($next-s), 0, 0 ) );
+		}
+		&.bespoke-before-2 {
+			@include transform( translate3d( -($nextnextnext-s), 0, 0 ) );
+			opacity: 0.1;
+		}
+		&.bespoke-before-1 {
+			@include transform( translate3d( -($nextnext-s), 0, 0 ) );
+			opacity: 0.5;
+		}
+
+		// bla
+		
+		&.bespoke-after {
+			@include transform( translate3d( $next-s, 0, 0 ) );
+		}
+		&.bespoke-after-2 {
+			@include transform( translate3d( $nextnextnext-s, 0, 0 ) );
+			opacity: 0.1;
+		}
+		&.bespoke-after-1 {
+			@include transform( translate3d( $nextnext-s, 0, 0 ) );
+			opacity: 0.5;
+		}
+	}
+}
+
+
+#prev {
+	position: absolute;
+	top: 148px;
+	left: 0;
+	z-index: 999;
+	opacity: .4;
+	&:hover {
+		opacity: 1;
+	}
+}
+#next {
+	@extend #prev;
+	right: 0;
+	left: auto;
 }

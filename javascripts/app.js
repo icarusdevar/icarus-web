@@ -82,11 +82,26 @@ var APP = {
 			s.$stepGraph.removeClass( s.navigation.initialClass );
 		}, { offset: 500 });
 
-		s.$apps.waypoint(function() {
-			s.$apps.find('.panel-app').each(function(index) {
-				$(this).animate( { "opacity": 1 }, 500*(index+1) );
-			});
-		}, { offset: 200 });
+		// s.$apps.waypoint(function() {
+		// 	s.$apps.find('.panel-app').each(function(index) {
+		// 		$(this).animate( { "opacity": 1 }, 500*(index+1) );
+		// 	});
+		// }, { offset: 200 });
+
+		var one = bespoke.horizontal.from('#slider');
+
+		$('body').on('click', '#next', function(event) {
+			event.preventDefault();
+			// Act on the event
+			one.next();
+			
+		}).on('click', '#prev', function(event) {
+			event.preventDefault();
+			// Act on the event
+			one.prev();
+			
+		});
+
 	}
 }
 

@@ -7219,6 +7219,378 @@ a.th {
   max-width: 800px;
 }
 
+/*!
+ * Bespoke.js Demo Themes
+ *
+ * These styles are hard-coded to be pre-processor agnostic.
+ * In reality, you should probably use -prefix-free or LESS / SCSS / Stylus.
+ *
+ * This is only scratching the surfact of what can be done.
+ * Be creative and make something that surprises people! ;)
+ *
+ */
+/* Cube Theme */
+/* line 13, ../sass/_themes.scss */
+.cube {
+  background: rgba(86, 174, 231, 0.3);
+}
+
+/* line 17, ../sass/_themes.scss */
+.cube section,
+.cube .arrow:hover {
+  background: #56aee7;
+}
+
+/* line 20, ../sass/_themes.scss */
+.cube a {
+  color: #56aee7;
+}
+
+/* line 23, ../sass/_themes.scss */
+.cube section.bespoke-before {
+  -webkit-transform: translateX(-332px) rotateY(-70deg) translateX(-652px) rotateY(-110deg) translateX(-530px);
+  -moz-transform: translateX(-332px) rotateY(-70deg) translateX(-652px) rotateY(-110deg) translateX(-530px);
+  -ms-transform: translateX(-332px) rotateY(-70deg) translateX(-652px) rotateY(-110deg) translateX(-530px);
+  -o-transform: translateX(-332px) rotateY(-70deg) translateX(-652px) rotateY(-110deg) translateX(-530px);
+  transform: translateX(-332px) rotateY(-70deg) translateX(-652px) rotateY(-110deg) translateX(-530px);
+}
+
+/* line 30, ../sass/_themes.scss */
+.cube section.bespoke-before-1 {
+  -webkit-transform: translateX(-332px) rotateY(-70deg) translateX(-512px);
+  -moz-transform: translateX(-332px) rotateY(-70deg) translateX(-512px);
+  -ms-transform: translateX(-332px) rotateY(-70deg) translateX(-512px);
+  -o-transform: translateX(-332px) rotateY(-70deg) translateX(-512px);
+  transform: translateX(-332px) rotateY(-70deg) translateX(-512px);
+  opacity: 0.5;
+}
+
+/* line 38, ../sass/_themes.scss */
+.cube section.bespoke-after {
+  -webkit-transform: translateX(332px) rotateY(70deg) translateX(652px) rotateY(110deg) translateX(530px);
+  -moz-transform: translateX(332px) rotateY(70deg) translateX(652px) rotateY(110deg) translateX(530px);
+  -ms-transform: translateX(332px) rotateY(70deg) translateX(652px) rotateY(110deg) translateX(530px);
+  -o-transform: translateX(332px) rotateY(70deg) translateX(652px) rotateY(110deg) translateX(530px);
+  transform: translateX(332px) rotateY(70deg) translateX(652px) rotateY(110deg) translateX(530px);
+}
+
+/* line 45, ../sass/_themes.scss */
+.cube section.bespoke-after-1 {
+  -webkit-transform: translateX(332px) rotateY(70deg) translateX(512px);
+  -moz-transform: translateX(332px) rotateY(70deg) translateX(512px);
+  -ms-transform: translateX(332px) rotateY(70deg) translateX(512px);
+  -o-transform: translateX(332px) rotateY(70deg) translateX(512px);
+  transform: translateX(332px) rotateY(70deg) translateX(512px);
+  opacity: 0.5;
+}
+
+/* Concave Theme */
+/* line 55, ../sass/_themes.scss */
+.concave {
+  background: rgba(235, 156, 184, 0.3);
+}
+
+/* line 59, ../sass/_themes.scss */
+.concave section,
+.concave .arrow:hover {
+  background: #eb9cb8;
+}
+
+/* line 62, ../sass/_themes.scss */
+.concave a {
+  color: #eb9cb8;
+}
+
+/* line 65, ../sass/_themes.scss */
+.concave section.bespoke-before {
+  -webkit-transform: translateX(-800px) rotateY(90deg) translateX(-800px);
+  -moz-transform: translateX(-800px) rotateY(90deg) translateX(-800px);
+  -ms-transform: translateX(-800px) rotateY(90deg) translateX(-800px);
+  -o-transform: translateX(-800px) rotateY(90deg) translateX(-800px);
+  transform: translateX(-800px) rotateY(90deg) translateX(-800px);
+}
+
+/* line 72, ../sass/_themes.scss */
+.concave section.bespoke-before-1 {
+  -webkit-transform: translateX(-310px) rotateY(58deg) translateX(-240px);
+  -moz-transform: translateX(-310px) rotateY(58deg) translateX(-240px);
+  -ms-transform: translateX(-310px) rotateY(58deg) translateX(-240px);
+  -o-transform: translateX(-310px) rotateY(58deg) translateX(-240px);
+  transform: translateX(-310px) rotateY(58deg) translateX(-240px);
+  opacity: 0.4;
+}
+
+/* line 80, ../sass/_themes.scss */
+.concave section.bespoke-after {
+  -webkit-transform: translateX(800px) rotateY(-90deg) translateX(800px);
+  -moz-transform: translateX(800px) rotateY(-90deg) translateX(800px);
+  -ms-transform: translateX(800px) rotateY(-90deg) translateX(800px);
+  -o-transform: translateX(800px) rotateY(-90deg) translateX(800px);
+  transform: translateX(800px) rotateY(-90deg) translateX(800px);
+}
+
+/* line 87, ../sass/_themes.scss */
+.concave section.bespoke-after-1 {
+  -webkit-transform: translateX(310px) rotateY(-58deg) translateX(240px);
+  -moz-transform: translateX(310px) rotateY(-58deg) translateX(240px);
+  -ms-transform: translateX(310px) rotateY(-58deg) translateX(240px);
+  -o-transform: translateX(310px) rotateY(-58deg) translateX(240px);
+  transform: translateX(310px) rotateY(-58deg) translateX(240px);
+  opacity: 0.4;
+}
+
+/* Coverflow Theme */
+/* line 97, ../sass/_themes.scss */
+.coverflow {
+  background: rgba(42, 206, 185, 0.2);
+}
+
+/* line 101, ../sass/_themes.scss */
+.coverflow section,
+.coverflow .arrow:hover {
+  background: #2aceb9;
+}
+
+/* line 104, ../sass/_themes.scss */
+.coverflow a {
+  color: #2aceb9;
+}
+
+/* line 107, ../sass/_themes.scss */
+.coverflow section.bespoke-before {
+  -webkit-transform: translateX(-270px) rotateY(45deg) scale(0.6);
+  -moz-transform: translateX(-270px) rotateY(45deg) scale(0.6);
+  -ms-transform: translateX(-270px) rotateY(45deg) scale(0.6);
+  -o-transform: translateX(-270px) rotateY(45deg) scale(0.6);
+  transform: translateX(-270px) rotateY(45deg) scale(0.6);
+  z-index: 6;
+}
+
+/* line 115, ../sass/_themes.scss */
+.coverflow section.bespoke-before-3 {
+  -webkit-transform: translateX(-230px) rotateY(45deg) scale(0.6);
+  -moz-transform: translateX(-230px) rotateY(45deg) scale(0.6);
+  -ms-transform: translateX(-230px) rotateY(45deg) scale(0.6);
+  -o-transform: translateX(-230px) rotateY(45deg) scale(0.6);
+  transform: translateX(-230px) rotateY(45deg) scale(0.6);
+  opacity: 0.1;
+  z-index: 7;
+}
+
+/* line 124, ../sass/_themes.scss */
+.coverflow section.bespoke-before-2 {
+  -webkit-transform: translateX(-190px) rotateY(45deg) scale(0.6);
+  -moz-transform: translateX(-190px) rotateY(45deg) scale(0.6);
+  -ms-transform: translateX(-190px) rotateY(45deg) scale(0.6);
+  -o-transform: translateX(-190px) rotateY(45deg) scale(0.6);
+  transform: translateX(-190px) rotateY(45deg) scale(0.6);
+  opacity: 0.2;
+  z-index: 8;
+}
+
+/* line 133, ../sass/_themes.scss */
+.coverflow section.bespoke-before-1 {
+  -webkit-transform: translateX(-150px) rotateY(45deg) scale(0.6);
+  -moz-transform: translateX(-150px) rotateY(45deg) scale(0.6);
+  -ms-transform: translateX(-150px) rotateY(45deg) scale(0.6);
+  -o-transform: translateX(-150px) rotateY(45deg) scale(0.6);
+  transform: translateX(-150px) rotateY(45deg) scale(0.6);
+  opacity: 0.3;
+  z-index: 9;
+}
+
+/* line 142, ../sass/_themes.scss */
+.coverflow section.bespoke-active {
+  z-index: 10;
+}
+
+/* line 145, ../sass/_themes.scss */
+.coverflow section.bespoke-after {
+  -webkit-transform: translateX(270px) rotateY(-45deg) scale(0.6);
+  -moz-transform: translateX(270px) rotateY(-45deg) scale(0.6);
+  -ms-transform: translateX(270px) rotateY(-45deg) scale(0.6);
+  -o-transform: translateX(270px) rotateY(-45deg) scale(0.6);
+  transform: translateX(270px) rotateY(-45deg) scale(0.6);
+  z-index: 6;
+}
+
+/* line 153, ../sass/_themes.scss */
+.coverflow section.bespoke-after-1 {
+  -webkit-transform: translateX(150px) rotateY(-45deg) scale(0.6);
+  -moz-transform: translateX(150px) rotateY(-45deg) scale(0.6);
+  -ms-transform: translateX(150px) rotateY(-45deg) scale(0.6);
+  -o-transform: translateX(150px) rotateY(-45deg) scale(0.6);
+  transform: translateX(150px) rotateY(-45deg) scale(0.6);
+  opacity: 0.3;
+  z-index: 9;
+}
+
+/* line 162, ../sass/_themes.scss */
+.coverflow section.bespoke-after-2 {
+  -webkit-transform: translateX(190px) rotateY(-45deg) scale(0.6);
+  -moz-transform: translateX(190px) rotateY(-45deg) scale(0.6);
+  -ms-transform: translateX(190px) rotateY(-45deg) scale(0.6);
+  -o-transform: translateX(190px) rotateY(-45deg) scale(0.6);
+  transform: translateX(190px) rotateY(-45deg) scale(0.6);
+  opacity: 0.2;
+  z-index: 8;
+}
+
+/* line 171, ../sass/_themes.scss */
+.coverflow section.bespoke-after-3 {
+  -webkit-transform: translateX(230px) rotateY(-45deg) scale(0.6);
+  -moz-transform: translateX(230px) rotateY(-45deg) scale(0.6);
+  -ms-transform: translateX(230px) rotateY(-45deg) scale(0.6);
+  -o-transform: translateX(230px) rotateY(-45deg) scale(0.6);
+  transform: translateX(230px) rotateY(-45deg) scale(0.6);
+  opacity: 0.1;
+  z-index: 7;
+}
+
+/* Classic Theme */
+/* line 184, ../sass/_themes.scss */
+.classic {
+  background: rgba(243, 111, 86, 0.2);
+}
+/* line 187, ../sass/_themes.scss */
+.classic section,
+.classic .arrow:hover {
+  background: #f36f56;
+}
+/* line 190, ../sass/_themes.scss */
+.classic a {
+  color: #f36f56;
+}
+/* line 194, ../sass/_themes.scss */
+.classic section.bespoke-before {
+  -webkit-transform: translate3d(-1920px, 0, 0);
+  -moz-transform: translate3d(-1920px, 0, 0);
+  -ms-transform: translate3d(-1920px, 0, 0);
+  -o-transform: translate3d(-1920px, 0, 0);
+  transform: translate3d(-1920px, 0, 0);
+}
+/* line 201, ../sass/_themes.scss */
+.classic section.bespoke-before-2 {
+  -webkit-transform: translate3d(-1280px, 0, 0);
+  -moz-transform: translate3d(-1280px, 0, 0);
+  -ms-transform: translate3d(-1280px, 0, 0);
+  -o-transform: translate3d(-1280px, 0, 0);
+  transform: translate3d(-1280px, 0, 0);
+  opacity: 0.1;
+}
+/* line 209, ../sass/_themes.scss */
+.classic section.bespoke-before-1 {
+  -webkit-transform: translate3d(-640px, 0, 0);
+  -moz-transform: translate3d(-640px, 0, 0);
+  -ms-transform: translate3d(-640px, 0, 0);
+  -o-transform: translate3d(-640px, 0, 0);
+  transform: translate3d(-640px, 0, 0);
+  opacity: 0.3;
+}
+/* line 217, ../sass/_themes.scss */
+.classic section.bespoke-after {
+  -webkit-transform: translate3d(1920px, 0, 0);
+  -moz-transform: translate3d(1920px, 0, 0);
+  -ms-transform: translate3d(1920px, 0, 0);
+  -o-transform: translate3d(1920px, 0, 0);
+  transform: translate3d(1920px, 0, 0);
+}
+/* line 224, ../sass/_themes.scss */
+.classic section.bespoke-after-2 {
+  -webkit-transform: translate3d(1280px, 0, 0);
+  -moz-transform: translate3d(1280px, 0, 0);
+  -ms-transform: translate3d(1280px, 0, 0);
+  -o-transform: translate3d(1280px, 0, 0);
+  transform: translate3d(1280px, 0, 0);
+  opacity: 0.1;
+}
+/* line 232, ../sass/_themes.scss */
+.classic section.bespoke-after-1 {
+  -webkit-transform: translate3d(640px, 0, 0);
+  -moz-transform: translate3d(640px, 0, 0);
+  -ms-transform: translate3d(640px, 0, 0);
+  -o-transform: translate3d(640px, 0, 0);
+  transform: translate3d(640px, 0, 0);
+  opacity: 0.3;
+}
+
+/* Carousel Theme */
+/* line 243, ../sass/_themes.scss */
+.carousel {
+  background: rgba(121, 255, 0, 0.2);
+}
+
+/* line 247, ../sass/_themes.scss */
+.carousel section,
+.carousel .arrow:hover {
+  background: #83c745;
+}
+
+/* line 250, ../sass/_themes.scss */
+.carousel a {
+  color: #83c745;
+}
+
+/* line 253, ../sass/_themes.scss */
+.carousel section.bespoke-before {
+  -webkit-transform: translateX(-980px) rotateY(-72deg) translateX(-1290px);
+  -moz-transform: translateX(-980px) rotateY(-72deg) translateX(-1290px);
+  -ms-transform: translateX(-980px) rotateY(-72deg) translateX(-1290px);
+  -o-transform: translateX(-980px) rotateY(-72deg) translateX(-1290px);
+  transform: translateX(-980px) rotateY(-72deg) translateX(-1290px);
+  opacity: 0;
+}
+
+/* line 261, ../sass/_themes.scss */
+.carousel section.bespoke-before-2 {
+  -webkit-transform: translateX(-590px) rotateY(-52deg) translateX(-780px);
+  -moz-transform: translateX(-590px) rotateY(-52deg) translateX(-780px);
+  -ms-transform: translateX(-590px) rotateY(-52deg) translateX(-780px);
+  -o-transform: translateX(-590px) rotateY(-52deg) translateX(-780px);
+  transform: translateX(-590px) rotateY(-52deg) translateX(-780px);
+  opacity: 0.3;
+}
+
+/* line 269, ../sass/_themes.scss */
+.carousel section.bespoke-before-1 {
+  -webkit-transform: translateX(-270px) rotateY(-30deg) translateX(-290px);
+  -moz-transform: translateX(-270px) rotateY(-30deg) translateX(-290px);
+  -ms-transform: translateX(-270px) rotateY(-30deg) translateX(-290px);
+  -o-transform: translateX(-270px) rotateY(-30deg) translateX(-290px);
+  transform: translateX(-270px) rotateY(-30deg) translateX(-290px);
+  opacity: 0.5;
+}
+
+/* line 277, ../sass/_themes.scss */
+.carousel section.bespoke-after {
+  -webkit-transform: translateX(980px) rotateY(72deg) translateX(1290px);
+  -moz-transform: translateX(980px) rotateY(72deg) translateX(1290px);
+  -ms-transform: translateX(980px) rotateY(72deg) translateX(1290px);
+  -o-transform: translateX(980px) rotateY(72deg) translateX(1290px);
+  transform: translateX(980px) rotateY(72deg) translateX(1290px);
+  opacity: 0;
+}
+
+/* line 285, ../sass/_themes.scss */
+.carousel section.bespoke-after-1 {
+  -webkit-transform: translateX(270px) rotateY(30deg) translateX(290px);
+  -moz-transform: translateX(270px) rotateY(30deg) translateX(290px);
+  -ms-transform: translateX(270px) rotateY(30deg) translateX(290px);
+  -o-transform: translateX(270px) rotateY(30deg) translateX(290px);
+  transform: translateX(270px) rotateY(30deg) translateX(290px);
+  opacity: 0.5;
+}
+
+/* line 293, ../sass/_themes.scss */
+.carousel section.bespoke-after-2 {
+  -webkit-transform: translateX(590px) rotateY(52deg) translateX(780px);
+  -moz-transform: translateX(590px) rotateY(52deg) translateX(780px);
+  -ms-transform: translateX(590px) rotateY(52deg) translateX(780px);
+  -o-transform: translateX(590px) rotateY(52deg) translateX(780px);
+  transform: translateX(590px) rotateY(52deg) translateX(780px);
+  opacity: 0.3;
+}
+
 @font-face {
   font-family: 'fontello';
   src: url("../font/fontello.eot?38239995");
@@ -7281,7 +7653,7 @@ a.th {
   margin-top: 8px;
   margin-left: 18px;
   text-indent: -9999px;
-  width: 201px;
+  width: 241px;
   height: 62px;
   background-image: url(../images/icarus-logo-bg.png);
   background-repeat: no-repeat;
@@ -7584,8 +7956,7 @@ h4 {
   margin-bottom: 1.25em;
   padding: 0;
   background: #e9e9e9;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
+  margin-bottom: 0;
 }
 /* line 44, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/zurb-foundation-4.3.1/scss/foundation/components/_panels.scss */
 .panel-app > :first-child {
@@ -7609,50 +7980,46 @@ h4 {
   line-height: 1.4;
 }
 
-/* line 309, ../sass/_icarus.scss */
-.app-block {
-  margin-bottom: 15px;
-}
-/* line 312, ../sass/_icarus.scss */
-.app-block img {
+/* line 313, ../sass/_icarus.scss */
+.app-block img, .slide img {
   width: 100%;
 }
-/* line 314, ../sass/_icarus.scss */
-.app-block .app-block-text {
+/* line 315, ../sass/_icarus.scss */
+.app-block .app-block-text, .slide .app-block-text {
   padding: 1.25em;
 }
-/* line 316, ../sass/_icarus.scss */
-.app-block .app-block-text img {
+/* line 317, ../sass/_icarus.scss */
+.app-block .app-block-text img, .slide .app-block-text img {
   width: auto;
 }
-/* line 321, ../sass/_icarus.scss */
-.app-block h3 {
+/* line 322, ../sass/_icarus.scss */
+.app-block h3, .slide h3 {
   font-weight: 400;
   font-size: 1em;
 }
-/* line 326, ../sass/_icarus.scss */
-.app-block p {
+/* line 327, ../sass/_icarus.scss */
+.app-block p, .slide p {
   font-size: 0.75em;
 }
 
-/* line 331, ../sass/_icarus.scss */
+/* line 332, ../sass/_icarus.scss */
 .app-icon {
   position: absolute;
-  top: 90px;
+  top: 100px;
   margin-left: -48px;
   left: 50%;
 }
 
-/* line 351, ../sass/_icarus.scss */
+/* line 352, ../sass/_icarus.scss */
 #site-footer {
   background: #eaeaea;
 }
-/* line 354, ../sass/_icarus.scss */
+/* line 355, ../sass/_icarus.scss */
 #site-footer p {
   font-size: 0.75em;
 }
 
-/* line 362, ../sass/_icarus.scss */
+/* line 363, ../sass/_icarus.scss */
 .contact-panel {
   min-height: 360px;
 }
@@ -7660,28 +8027,165 @@ h4 {
 .contact-panel .thumbnail {
   text-align: center;
 }
-/* line 371, ../sass/_icarus.scss */
+/* line 369, ../sass/_icarus.scss */
 .contact-panel h4 {
   margin: 15px 0;
 }
-/* line 376, ../sass/_icarus.scss */
+/* line 372, ../sass/_icarus.scss */
 .contact-panel p {
   font-size: 0.75em;
 }
 
-/* line 386, ../sass/_icarus.scss */
+/* line 378, ../sass/_icarus.scss */
 #social-links i {
   font-size: 5em;
 }
-/* line 389, ../sass/_icarus.scss */
+/* line 381, ../sass/_icarus.scss */
 #social-links .small-6 {
   text-align: center;
 }
-/* line 392, ../sass/_icarus.scss */
+/* line 384, ../sass/_icarus.scss */
 #social-links a.social-facebook {
   color: #3B5998;
 }
-/* line 395, ../sass/_icarus.scss */
+/* line 387, ../sass/_icarus.scss */
 #social-links a.social-twitter {
   color: #34BBEE;
+}
+
+/* line 393, ../sass/_icarus.scss */
+.slider-container {
+  height: 600px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 400, ../sass/_icarus.scss */
+.article {
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  -ms-perspective: 600px;
+  -o-perspective: 600px;
+  perspective: 600px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/* line 413, ../sass/_icarus.scss */
+.slide {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  border-radius: 0px;
+  width: 320px;
+  height: 428px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -160px;
+  margin-top: -220px;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+/* line 416, ../sass/_icarus.scss */
+.slide .button {
+  margin-bottom: 0;
+}
+/* line 438, ../sass/_icarus.scss */
+.slide.bespoke-active {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* line 449, ../sass/_icarus.scss */
+.apps {
+  /* Classic Theme plus  */
+}
+/* line 453, ../sass/_icarus.scss */
+.apps .arrow:hover {
+  background: #f36f56;
+}
+/* line 456, ../sass/_icarus.scss */
+.apps a {
+  color: #f36f56;
+}
+/* line 461, ../sass/_icarus.scss */
+.apps section.bespoke-before {
+  -webkit-transform: translate3d(-340px, 0, 0);
+  -moz-transform: translate3d(-340px, 0, 0);
+  -ms-transform: translate3d(-340px, 0, 0);
+  -o-transform: translate3d(-340px, 0, 0);
+  transform: translate3d(-340px, 0, 0);
+}
+/* line 464, ../sass/_icarus.scss */
+.apps section.bespoke-before-2 {
+  -webkit-transform: translate3d(-720px, 0, 0);
+  -moz-transform: translate3d(-720px, 0, 0);
+  -ms-transform: translate3d(-720px, 0, 0);
+  -o-transform: translate3d(-720px, 0, 0);
+  transform: translate3d(-720px, 0, 0);
+  opacity: 0.1;
+}
+/* line 468, ../sass/_icarus.scss */
+.apps section.bespoke-before-1 {
+  -webkit-transform: translate3d(-360px, 0, 0);
+  -moz-transform: translate3d(-360px, 0, 0);
+  -ms-transform: translate3d(-360px, 0, 0);
+  -o-transform: translate3d(-360px, 0, 0);
+  transform: translate3d(-360px, 0, 0);
+  opacity: 0.5;
+}
+/* line 475, ../sass/_icarus.scss */
+.apps section.bespoke-after {
+  -webkit-transform: translate3d(340px, 0, 0);
+  -moz-transform: translate3d(340px, 0, 0);
+  -ms-transform: translate3d(340px, 0, 0);
+  -o-transform: translate3d(340px, 0, 0);
+  transform: translate3d(340px, 0, 0);
+}
+/* line 478, ../sass/_icarus.scss */
+.apps section.bespoke-after-2 {
+  -webkit-transform: translate3d(720px, 0, 0);
+  -moz-transform: translate3d(720px, 0, 0);
+  -ms-transform: translate3d(720px, 0, 0);
+  -o-transform: translate3d(720px, 0, 0);
+  transform: translate3d(720px, 0, 0);
+  opacity: 0.1;
+}
+/* line 482, ../sass/_icarus.scss */
+.apps section.bespoke-after-1 {
+  -webkit-transform: translate3d(360px, 0, 0);
+  -moz-transform: translate3d(360px, 0, 0);
+  -ms-transform: translate3d(360px, 0, 0);
+  -o-transform: translate3d(360px, 0, 0);
+  transform: translate3d(360px, 0, 0);
+  opacity: 0.5;
+}
+
+/* line 490, ../sass/_icarus.scss */
+#prev, #next {
+  position: absolute;
+  top: 148px;
+  left: 0;
+  z-index: 999;
+  opacity: .4;
+}
+/* line 496, ../sass/_icarus.scss */
+#prev:hover, #next:hover {
+  opacity: 1;
+}
+
+/* line 500, ../sass/_icarus.scss */
+#next {
+  right: 0;
+  left: auto;
 }

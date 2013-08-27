@@ -8009,51 +8009,57 @@ h4 {
   margin-left: -48px;
   left: 50%;
 }
+@media (max-width: 767px) {
+  /* line 332, ../sass/_icarus.scss */
+  .app-icon {
+    top: 50px;
+  }
+}
 
-/* line 352, ../sass/_icarus.scss */
+/* line 356, ../sass/_icarus.scss */
 #site-footer {
   background: #eaeaea;
 }
-/* line 355, ../sass/_icarus.scss */
+/* line 359, ../sass/_icarus.scss */
 #site-footer p {
   font-size: 0.75em;
 }
 
-/* line 363, ../sass/_icarus.scss */
+/* line 367, ../sass/_icarus.scss */
 .contact-panel {
   min-height: 360px;
 }
-/* line 366, ../sass/_icarus.scss */
+/* line 370, ../sass/_icarus.scss */
 .contact-panel .thumbnail {
   text-align: center;
 }
-/* line 369, ../sass/_icarus.scss */
+/* line 373, ../sass/_icarus.scss */
 .contact-panel h4 {
   margin: 15px 0;
 }
-/* line 372, ../sass/_icarus.scss */
+/* line 376, ../sass/_icarus.scss */
 .contact-panel p {
   font-size: 0.75em;
 }
 
-/* line 378, ../sass/_icarus.scss */
+/* line 382, ../sass/_icarus.scss */
 #social-links i {
   font-size: 5em;
 }
-/* line 381, ../sass/_icarus.scss */
+/* line 385, ../sass/_icarus.scss */
 #social-links .small-6 {
   text-align: center;
 }
-/* line 384, ../sass/_icarus.scss */
+/* line 388, ../sass/_icarus.scss */
 #social-links a.social-facebook {
   color: #3B5998;
 }
-/* line 387, ../sass/_icarus.scss */
+/* line 391, ../sass/_icarus.scss */
 #social-links a.social-twitter {
   color: #34BBEE;
 }
 
-/* line 393, ../sass/_icarus.scss */
+/* line 397, ../sass/_icarus.scss */
 .slider-container {
   height: 600px;
   position: relative;
@@ -8061,7 +8067,7 @@ h4 {
   overflow: hidden;
 }
 
-/* line 400, ../sass/_icarus.scss */
+/* line 404, ../sass/_icarus.scss */
 .article {
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
@@ -8075,7 +8081,7 @@ h4 {
   bottom: 0;
 }
 
-/* line 413, ../sass/_icarus.scss */
+/* line 417, ../sass/_icarus.scss */
 .slide {
   -webkit-transform: none;
   -moz-transform: none;
@@ -8096,29 +8102,36 @@ h4 {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 416, ../sass/_icarus.scss */
+/* line 420, ../sass/_icarus.scss */
 .slide .button {
   margin-bottom: 0;
 }
-/* line 438, ../sass/_icarus.scss */
+/* line 442, ../sass/_icarus.scss */
 .slide.bespoke-active {
   opacity: 1;
   z-index: 1;
 }
+@media (max-width: 767px) {
+  /* line 417, ../sass/_icarus.scss */
+  .slide {
+    width: 240px;
+    margin-left: -120px;
+  }
+}
 
-/* line 449, ../sass/_icarus.scss */
+/* line 458, ../sass/_icarus.scss */
 .apps {
   /* Classic Theme plus  */
 }
-/* line 453, ../sass/_icarus.scss */
+/* line 462, ../sass/_icarus.scss */
 .apps .arrow:hover {
   background: #f36f56;
 }
-/* line 456, ../sass/_icarus.scss */
+/* line 465, ../sass/_icarus.scss */
 .apps a {
   color: #f36f56;
 }
-/* line 461, ../sass/_icarus.scss */
+/* line 470, ../sass/_icarus.scss */
 .apps section.bespoke-before {
   -webkit-transform: translate3d(-340px, 0, 0);
   -moz-transform: translate3d(-340px, 0, 0);
@@ -8126,7 +8139,7 @@ h4 {
   -o-transform: translate3d(-340px, 0, 0);
   transform: translate3d(-340px, 0, 0);
 }
-/* line 464, ../sass/_icarus.scss */
+/* line 473, ../sass/_icarus.scss */
 .apps section.bespoke-before-2 {
   -webkit-transform: translate3d(-720px, 0, 0);
   -moz-transform: translate3d(-720px, 0, 0);
@@ -8135,7 +8148,7 @@ h4 {
   transform: translate3d(-720px, 0, 0);
   opacity: 0.1;
 }
-/* line 468, ../sass/_icarus.scss */
+/* line 477, ../sass/_icarus.scss */
 .apps section.bespoke-before-1 {
   -webkit-transform: translate3d(-360px, 0, 0);
   -moz-transform: translate3d(-360px, 0, 0);
@@ -8144,7 +8157,7 @@ h4 {
   transform: translate3d(-360px, 0, 0);
   opacity: 0.5;
 }
-/* line 475, ../sass/_icarus.scss */
+/* line 484, ../sass/_icarus.scss */
 .apps section.bespoke-after {
   -webkit-transform: translate3d(340px, 0, 0);
   -moz-transform: translate3d(340px, 0, 0);
@@ -8152,7 +8165,7 @@ h4 {
   -o-transform: translate3d(340px, 0, 0);
   transform: translate3d(340px, 0, 0);
 }
-/* line 478, ../sass/_icarus.scss */
+/* line 487, ../sass/_icarus.scss */
 .apps section.bespoke-after-2 {
   -webkit-transform: translate3d(720px, 0, 0);
   -moz-transform: translate3d(720px, 0, 0);
@@ -8161,7 +8174,7 @@ h4 {
   transform: translate3d(720px, 0, 0);
   opacity: 0.1;
 }
-/* line 482, ../sass/_icarus.scss */
+/* line 491, ../sass/_icarus.scss */
 .apps section.bespoke-after-1 {
   -webkit-transform: translate3d(360px, 0, 0);
   -moz-transform: translate3d(360px, 0, 0);
@@ -8171,7 +8184,7 @@ h4 {
   opacity: 0.5;
 }
 
-/* line 490, ../sass/_icarus.scss */
+/* line 499, ../sass/_icarus.scss */
 #prev, #next {
   position: absolute;
   top: 148px;
@@ -8179,12 +8192,12 @@ h4 {
   z-index: 999;
   opacity: .4;
 }
-/* line 496, ../sass/_icarus.scss */
+/* line 505, ../sass/_icarus.scss */
 #prev:hover, #next:hover {
   opacity: 1;
 }
 
-/* line 500, ../sass/_icarus.scss */
+/* line 509, ../sass/_icarus.scss */
 #next {
   right: 0;
   left: auto;

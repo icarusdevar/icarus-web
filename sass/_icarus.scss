@@ -334,6 +334,10 @@ $process-graph-height: 770px;
 	top: 100px;
 	margin-left: -48px;
 	left: 50%;
+
+	@media (max-width: 767px) {
+		top: 50px;
+	}
 }
 
 
@@ -438,6 +442,11 @@ $process-graph-height: 770px;
 	&.bespoke-active {
 		opacity: 1;
 		z-index: 1;
+	}
+
+	@media (max-width: 767px) {
+		width: 240px;
+		margin-left: -(240px/2);
 	}
 }
 
